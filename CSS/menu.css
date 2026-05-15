@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-fundo-menu: rgb(7, 7, 7);
+    --cor-fundo: rgb(16, 21, 29);
+    --cor-fundo-secundario: rgb(22, 27, 34);
+    --cor-card: rgb(31, 41, 55);
+    --cor-primaria: rgb(88, 166, 255);
+    --cor-primaria-hover: rgb(121, 192, 255);
+    --cor-secundaria: rgb(124, 58, 237);
+    --cor-destaque: rgb(34, 197, 94);
+
+    --texto-principal: rgb(240, 246, 252);
+    --texto-secundario: rgb(139, 148, 158);
+    --texto-muted: rgb(110, 118, 129);
+
+    --borda: rgb(48, 54, 61);
+    --borda-hover: rgb(88, 166, 255);
+
+    --botao-bg: rgb(35, 134, 54);
+    --botao-hover: rgb(46, 160, 67);
+    --botao-texto: rgb(255, 255, 255);
+
+    --font-principal: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor-fundo-menu);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: var(--cor-destaque); 
+}

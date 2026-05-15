@@ -1,0 +1,115 @@
+.tela-toda{
+    width: 90%;
+    margin: 100px auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+   
+}
+.apresentacao,
+.titulo,
+.descricao{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.titulo h1{
+    color: var(--texto-principal);
+}
+
+.descricao p{
+    color: var(--texto-secundario);
+}
+
+.sessao-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.titulo-sessaoCards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-sessaoCards h3{
+    color: var(--texto-principal);
+    font-size: 28px;
+}
+
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card{
+    width: 100%;
+    min-height: 220px;
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.329);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 0 0 2px var(--cor-secundaria);
+    transform: translateY(-5px);
+}
+
+.card .cabecalho{
+    width: 100%;
+}
+
+.card .cabecalho h1{
+    color: var(--texto-principal);
+    font-size: 24px;
+}
+
+.card .descricao-card{
+    width: 100%;
+    flex: 1;
+}
+
+.card .descricao-card p{
+    color: var(--texto-secundario);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.card .botao{
+    width: 100%;
+}
+
+.card .botao button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--botao-bg);
+    color: var(--botao-texto);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.card .botao button:hover{
+    background-color: var(--botao-hover);
+}
